@@ -14,7 +14,7 @@ Repositório com resoluções de problemas de algoritmo ambicioso do [LeetCode](
 ## Exercicios
 |Nome | Dificuldade | Código |
 | -- | -- | -- |
-| [45. Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) | Medium | [Código](./exercices/jump_Game_II/README.md) |
+| [45. Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) | Medium | [Código](./exercices/45_medium/README.md) |
 
 ## Apresentação
 
