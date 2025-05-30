@@ -8,6 +8,6 @@ A cada posição do array, calculamos o ponto mais distante que conseguimos alca
 
 # Submissão
 
-![alt text](/assets/45_medium.png)
+![alt text](/assets/45_submit.png)
 
 # [Código](./jump_Game_II.cpp)
