@@ -16,6 +16,7 @@ Repositório com resoluções de problemas de algoritmo ambicioso do [LeetCode](
 | -- | -- | -- |
 | [1402. Reducing Dishes](https://leetcode.com/problems/reducing-dishes/description/) | Hard | [Código](./exercices/reducing_Dishes/README.md) |
 | [45. Jump Game II](https://leetcode.com/problems/jump-game-ii/description/) | Medium | [Código](./exercises/45_medium/README.md) |
+| [630. Course Schedule III](https://leetcode.com/problems/course-schedule-iii/description/) | Hard | [Código](./exercises/630_hard/README.md) |
 
 ## Apresentação
 **Link da apresentação:** [Apresentação]()
