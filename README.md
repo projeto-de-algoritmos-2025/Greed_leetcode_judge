@@ -19,7 +19,7 @@ Repositório com resoluções de problemas de algoritmo ambicioso do [LeetCode](
 | [630. Course Schedule III](https://leetcode.com/problems/course-schedule-iii/description/) | Hard | [Código](./exercises/630_hard/README.md) |
 
 ## Apresentação
-**Link da apresentação:** [Apresentação]()
+**Link da apresentação:** [Apresentação](https://www.youtube.com/watch?v=uqvInmR0Cmk/)
 
 ## Uso 
 Para executar o trabalho basta abrir o link do exercício e copiar e colar o código. Utilize a interface para testar os códigos com os testcases existentes ou personalize-os.
