@@ -5,34 +5,19 @@
 class Solution {
 public:
     int maxSatisfaction(std::vector<int>& satisfaction) {
-        std::sort(satisfaction.begin(), satisfaction.end(), std::greater<int>());
-        int max_sum = 0;
-        int current_sum = 0;
-        for (int s : satisfaction) {
-            current_sum += s;
-            if (current_sum > 0) {
-                max_sum += current_sum;
-            } else {
-                break;
+        std::sort(satisfaction.begin(), satisfaction.end()); 
+        int n = satisfaction.size();
+        std::vector<std::vector<int>> dp(n + 1, std::vector<int>(n + 1, 0));
+
+        for (int i = n - 1; i >= 0; --i) {
+            for (int t = i; t >= 0; --t) {
+                dp[i][t] = std::max(
+                    satisfaction[i] * (t + 1) + dp[i + 1][t + 1], 
+                    dp[i + 1][t]                                 
+                );
             }
         }
-        return max_sum;
+
+        return dp[0][0];
     }
 };
-
-// Função principal para testar a classe Solution
-// int main() {
-//     Solution sol; // Cria uma instância da classe Solution
-
-//     // Define três vetores de exemplo com níveis de satisfação
-//     std::vector<int> ex1 = {-1, -8, 0, 5, -9}; // Deve resultar em 14
-//     std::vector<int> ex2 = {4, 3, 2};          // Deve resultar em 20
-//     std::vector<int> ex3 = {-1, -4, -5};       // Deve resultar em 0
-
-//     // Imprime os resultados das chamadas ao método maxSatisfaction
-//     std::cout << sol.maxSatisfaction(ex1) << std::endl;
-//     std::cout << sol.maxSatisfaction(ex2) << std::endl;
-//     std::cout << sol.maxSatisfaction(ex3) << std::endl;
-
-//     return 0; // Retorna 0 indicando execução bem-sucedida
-// }
